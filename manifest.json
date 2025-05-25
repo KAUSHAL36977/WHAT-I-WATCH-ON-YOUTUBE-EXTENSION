@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "GrindMode YouTube Tracker",
+    "version": "1.0",
+    "description": "Track your YouTube usage and stay focused on your goals",
+    "permissions": [
+        "storage",
+        "tabs",
+        "scripting",
+        "alarms"
+    ],
+    "host_permissions": [
+        "*://www.youtube.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.youtube.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "icons": {
+        "48": "icon.png"
+    }
+}
