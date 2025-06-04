@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GrindMode</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GrindMode</h1>
+        <div class="mode-toggle">
+            <button id="toggleMode" class="toggle-btn">Grind Mode: OFF</button>
+        </div>
+        <div class="stats-container">
+            <h2>Your YouTube Stats</h2>
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>Work/Study Videos</h3>
+                    <p id="workStudyCount">0</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Entertainment Videos</h3>
+                    <p id="entertainmentCount">0</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Total Watch Time</h3>
+                    <p id="totalWatchTime">0 minutes</p>
+                </div>
+            </div>
+        </div>
+        <div class="recent-videos">
+            <h2>Recent Videos</h2>
+            <div id="videoList" class="video-list">
+                <!-- Videos will be populated here -->
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html> 
